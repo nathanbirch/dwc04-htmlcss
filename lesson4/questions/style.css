@@ -1,0 +1,23 @@
+.gridAdjustments {
+  width: 100vw;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.floatRight {
+  float: right;
+}
+
+.hideOnMassiveTablet {
+  display: auto;
+}
+
+@media (max-width: 1460px) {
+  .hideOnMassiveTablet {
+    display: none;
+  }
+}

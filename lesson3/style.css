@@ -1,0 +1,10 @@
+.curvedImage {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+
+#awesome {
+    color:red
+}

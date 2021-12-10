@@ -1,0 +1,17 @@
+.prettyFont {
+  color: red;
+  font-size: 50px;
+  font-family: fantasy;
+  background-color: blue;
+}
+
+.comfort {
+  font-family: Comforter;
+}
+
+p {
+  background-color: rgb(72, 200, 247);
+}
+img {
+  border-radius: 5px;
+}

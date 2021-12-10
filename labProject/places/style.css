@@ -1,0 +1,13 @@
+.carousel {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.carousel-inner {
+  max-height: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-item h5, .carousel-item p {
+  text-shadow: rgb(0, 0, 0) 1px 0 20px;
+}
