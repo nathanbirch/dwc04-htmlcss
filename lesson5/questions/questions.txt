@@ -1,0 +1,12 @@
+Nate
+    bootstrap columns stacking when they shouldn't
+    responsive images in bootstrap carousel
+    footer with whitespace on the side
+    nav image not floating left when it should
+Lauren
+    video not showing up, and aspect ratios can be off. 
+    footer not showing up
+
+Molly
+    font awesome errors in console
+    

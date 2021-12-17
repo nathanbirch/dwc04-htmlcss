@@ -1,0 +1,105 @@
+.gradient {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  z-index: 1;
+}
+
+.gradient::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.gradient:hover::before {
+  opacity: 1;
+}
+
+.radial {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  padding: 125px;
+  border-radius: 300px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background: rgb(235, 170, 41);
+  background: radial-gradient(
+    circle,
+    rgba(235, 170, 41, 1) 0%,
+    rgba(230, 235, 57, 1) 29%,
+    rgba(233, 169, 72, 0.7133228291316527) 39%,
+    rgba(246, 70, 40, 1) 100%
+  );
+  animation-name: change;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.radial::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(235, 170, 41);
+  background: radial-gradient(
+    circle,
+    rgba(230, 235, 57, 1) 0%,
+    rgba(235, 170, 41, 1) 29%,
+    rgba(246, 70, 40, 1) 39%,
+    rgba(233, 169, 72, 0.7133228291316527) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.radial:hover::before {
+  opacity: 1;
+}
+
+#shine-div {
+  height: 30vh;
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  background: radial-gradient(
+      #ffffff 0%,
+      #ffb3ff 4%,
+      #ff33ff 12.25%,
+      #800080 31.25%,
+      #b300b3 50%
+    )
+    center/200% 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+  to {
+    background-position: top left;
+  }
+}
